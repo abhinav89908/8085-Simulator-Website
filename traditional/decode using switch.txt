@@ -1,0 +1,25 @@
+
+        // switch(words[0]){
+        //     case "MOV":
+        //         if(words.length!=3) console.log("Invalid instruction");
+        //         else mov(words[1], words[2]);
+        //         break;
+        //     case "LDA":
+        //         if(words.length!=2) console.log("Invalid instruction");
+        //         else lda(words[1]);
+        //         break;
+        //     case "STA":
+        //         if(words.length!=2) console.log("Invalid instruction");
+        //         else sta(words[1]);
+        //         break;
+        //     case "ADD":
+        //         if(words.length!=2) console.log("Invalid instruction");
+        //         else add(words[1]);
+        //         break;
+        //     case "HLT":
+        //         if(words.length!=1) console.log("Invalid instruction");
+        //         else hlt();
+        //         break;
+        //     default:
+        //         console.log("Compiler is going to through an error");           
+        // }

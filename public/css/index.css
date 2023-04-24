@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mainDiv{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: burlywood;
+}
+nav{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background: rgb(121, 35, 4);
+    /* background: rgb(228, 48, 3); */
+    /* background: rgb(222, 56, 1); */
+    height: 11vh;
+    width: 100%;
+}
+
+label.logo{
+    color: rgb(234, 230, 230);
+    font-size: 6vh;
+    line-height: 10vh;
+    padding: 0 8vh;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    /* margin-right: 4vh    ; */
+}
+nav ul li, a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vh;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    line-height: 11vh;
+    margin: 0 3vh;
+    color: white;
+}
+nav ul a:hover{
+    color:rgb(246, 201, 134)
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95vh, -50vh);
+    /* text-align: center; */
+    align-items: center;
+
+}
+.box{
+    margin: 3vh 0;
+}
+span#addHead{
+    color: rgb(94, 9, 9);
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+span#address{
+    background: rgb(241, 221, 191);
+    font-size: 4vh;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 0 2vh;
+    padding: 1vh 2vh;
+}
+.container textarea{
+    background-color: rgb(243, 213, 168);
+    max-width: 90vh; min-width: 90vh; max-height: 65vh; min-height: 65vh;
+    border: groove 4px rgb(173, 81, 45);
+    font-size: 4vh;
+    font-weight: 700;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: capitalize;
+    padding: 2vh 2vh;
+}
+.compiler button{
+    float: right; 
+    padding: 1vh 3vh;
+    margin: 1vh;
+    /* border: solid 1px white; */
+    border-radius: 7px;
+    color: white
+}
+#run{
+    background-color: rgb(130, 41, 9);
+}
+#debug{
+    background-color: rgb(130, 41, 9);
+}
+.architecture{
+    position: absolute;
+    top: 50vh;
+    left: 100vh;
+    /* border: solid 2px black; */
+    transform: translate(12vh, -45vh);
+    height: 75vh;
+    width: 80vh;
+    /* background: rgb(246, 201, 134); */
+    /* text-align: center; */
+    align-items: center;
+}
+#archHeadline{
+    font-weight: bold;
+    color: rgb(94, 9, 9);
+    font-size: 6vh;
+    margin: 0 25vh;
+    margin-bottom: 2vh;
+}
+.archHead{
+    font-weight: bold;
+    color: rgb(94, 9, 9);
+    font-size: 3vh;
+    margin-left: 5vh;
+}
+.counters{
+    border: solid 2px black;
+    border-radius: 7px;
+    background-color: rgb(246, 201, 134);
+    padding-left: 1vh;
+    padding-top: 3vh;
+    margin: 2vh;
+    height: 10vh
+}
+.register-pairs{
+    border: solid 0.4vh black;
+    border-radius: 1.5vh;
+    background-color: rgb(246, 201, 134);
+    padding-left: 4vh;
+    /* padding-top: 17px; */
+    margin: 2vh 15vh;
+    height: 25vh
+}
+.flags{
+    border: solid 2px black;
+    border-radius: 7px;
+    background-color: rgb(246, 201, 134);
+    padding-left: 0.2vh;
+    padding-top: 3vh;
+    margin: 0.8vh;
+    height: 10vh
+}
+#pc, #sp, #accum, #B, #C, #D, #E, #H, #L{
+    background-color: rgb(241, 221, 191);
+    padding: 1vh 2vh;
+    font-size: 3vh;
+    border: solid 0.4vh rgb(132, 4, 4);
+    border-radius: 1.5vh;
+    margin-right: 3vh;
+}
+#S, #Z, #P, #CY, #AC{
+    background-color: rgb(241, 221, 191);
+    padding: 0.4vh 1.2vh;
+    font-size: 3vh;
+    border: solid 0.4vh rgb(132, 4, 4);
+    border-radius: 1.5vh;
+    margin-right: 0vh;
+}
+.pairs{
+    margin: 3vh 0;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul{
+        visibility: hidden;
+    }
+}
