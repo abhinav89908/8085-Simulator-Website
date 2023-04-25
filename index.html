@@ -13,18 +13,20 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <label class="logo">8085 Emulator</label>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">References</a></li>
-            
+    <header class="header">
+        <a href="" class="logo">8085 Emulator</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">References</a></li>
+          <li><a href="">Programs</a></li>
         </ul>
-    </nav>
+      </header> 
     <div class="mainDiv">
-        
         <div class="container">
             <div class="box">
                 <span id="addHead">Current Address: </span>
@@ -42,44 +44,58 @@
                 <span id="archHeadline">Architecture</span>
             </div>
             <div class="counters">
-                <span class="archHead">PC:</span>
-                <span id="pc">0000</span>
-                <span class="archHead">SP:</span>
-                <span id="sp">0000</span>
-                <span class="archHead">A:</span>
-                <span id="accum">00</span>
+                <div class="rpcontent">
+
+                    <span class="archHead">PC:</span>
+                    <span id="pc">0000</span>
+                    <span class="archHead">SP:</span>
+                    <span id="sp">0000</span>
+                    <span class="archHead">A:</span>
+                    <span id="accum">00</span>
+                </div>
             </div>
             <div class="register-pairs">
-                <p class="pairs">
-                    <span class="archHead">B :</span>
-                    <span id="B">00</span>
-                    <span class="archHead">C :</span>
-                    <span id="C">00</span>
-                </p>
-                <p class="pairs">
-                    <span class="archHead">D :</span>
-                    <span id="D">00</span>
-                    <span class="archHead">E :</span>
-                    <span id="E">00</span>
-                </p>
-                <p class="pairs">
-                    <span class="archHead">H :</span>
-                    <span id="H">00</span>
-                    <span class="archHead">L :</span>
-                    <span id="L">00</span>
-                </p>
+                <div class="rpcontent">
+
+                    <div class="pairs">
+                        <span class="archHead" >B :</span>
+                        <span id="B">00</span>
+                        <span class="archHead">C :</span>
+                        <span id="C">00</span>
+                    </div>
+                    <div class="pairs">
+                        <span class="archHead">D :</span>
+                        <span id="D">00</span>
+                        <span class="archHead">E :</span>
+                        <span id="E">00</span>
+                    </div>
+                    <div class="pairs">
+                        <span class="archHead">H :</span>
+                        <span id="H">00</span>
+                        <span class="archHead">L :</span>
+                        <span id="L">00</span>
+                    </div> 
+                </div>
             </div>
             <div class="flags">
-                <span class="archHead">S :</span>
-                <span id="S">0</span>
-                <span class="archHead">Z :</span>
-                <span id="Z">0</span>
-                <span class="archHead">P :</span>
-                <span id="P">0</span>
-                <span class="archHead">CY:</span>
-                <span id="CY">0</span>
-                <span class="archHead">AC:</span>
-                <span id="AC">0</span>
+                <div class="rpcontent">
+                    <div>
+                        <span class="archHead">S :</span>
+                        <span id="S">0</span>
+                        <span class="archHead">Z :</span>
+                        <span id="Z">0</span>
+                    </div>
+                    <div>
+                        <span class="archHead">C :</span>
+                        <span id="CY">0</span>
+                        <span class="archHead">P:</span>
+                        <span id="P">0</span>
+                    </div>
+                    <div>
+                        <span class="archHead">AC:</span>
+                        <span id="AC">0</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
