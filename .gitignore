@@ -1,0 +1,5 @@
+/*
+    DESCRIPTION:
+    1. All the registers contain hexadecimal values in the form of string only.
+    2. Memory map contain address as key and data as value, both in the form of string only.
+*/
