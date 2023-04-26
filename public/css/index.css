@@ -25,6 +25,7 @@
   position: fixed;
   width: 100vw;
   z-index: 3;
+  font-size: 2vh;
 }
 
 .header ul {
@@ -200,13 +201,16 @@ span#address {
   font-size: 2vh;
   color: white;
 }
-.compiler button:hover{
-  border: 3px solid white;
-}
 #run {
   background-color: rgb(130, 41, 9);
 }
 #debug {
+  background-color: rgb(130, 41, 9);
+}
+.temp{
+  display: none;
+}
+#archi{
   background-color: rgb(130, 41, 9);
 }
 .architecture {
@@ -218,10 +222,14 @@ span#address {
   padding: 3vh 4vw;
   text-align: center;
 }
+.box {
+  text-align: center;
+}
 #archHeadline {
   font-weight: bold;
   color: rgb(94, 9, 9);
-  font-size: 2vw;
+  font-size: 5vh;
+  margin: 0 32%;
   text-align: center;
 }
 .archHead {
@@ -313,6 +321,9 @@ span#address {
 }
 
 @media screen and (max-width: 800px) {
+  .temp{
+    display: block;
+  }
   .architecture {
     float: none;
     width: 100%;
@@ -328,14 +339,10 @@ span#address {
     font-size: 3vh;
     text-align: center;
   }
-  .mainDiv {
-    top: 100%;
-    height: 200vh;
-  }
   .register-pairs {
     width: 50vw;
     margin-left:20vw;
-  }
+  } 
   .flags {
     display: flex;
     flex-direction: column;
@@ -343,5 +350,8 @@ span#address {
     padding:2px;
     width: 40vw;
     margin-left:25vw;
+  }
+  .architecture{
+    display: none;
   }
 }
