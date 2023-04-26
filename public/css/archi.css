@@ -1,0 +1,72 @@
+/* Base styles */
+.architecture {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.architecture th,
+.architecture td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.archHead {
+  font-weight: bold;
+}
+
+/* Styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  .architecture {
+    font-size: 14px;
+  }
+  
+  .architecture th,
+  .architecture td {
+    padding: 5px;
+  }
+  
+  .pairs {
+    display: block;
+  }
+  
+  .pairs span {
+    display: block;
+  }
+}
+
+/* Styles for larger screens */
+@media only screen and (min-width: 1200px) {
+  .architecture {
+    font-size: 18px;
+  }
+  
+  .architecture th,
+  .architecture td {
+    padding: 15px;
+  }
+}
+
+/* Colors and other styles */
+.architecture th {
+  background-color: #ccc;
+  color: #000;
+  font-weight: bold;
+}
+
+.architecture td.counters table td {
+  padding: 5px;
+}
+
+.architecture td.register-pairs table td {
+  padding: 5px 10px;
+}
+
+.architecture td.flags table td {
+  padding: 5px 10px;
+}
+
