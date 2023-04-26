@@ -6,7 +6,7 @@
 }
 
 .mainDiv {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
   top: 50%;
@@ -23,7 +23,7 @@
   background-color: rgb(127, 30, 30);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 3;
 }
 
@@ -165,16 +165,17 @@ nav ul a:hover {
 span#addHead {
   color: rgb(94, 9, 9);
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 5vh;
 }
 
 span#address {
   background: rgb(241, 221, 191);
-  font-size: 1vw;
-  border: solid 2px black;
+  font-size: 3vh;
+  border: solid 2px rgb(173, 81, 45);
   border-radius: 5px;
+  font-weight: bold;
   margin: 0 2vw;
-  padding: 1% 2%;
+  padding: 1% 4%;
 }
 .container textarea {
   background-color: rgb(243, 213, 168);
@@ -188,14 +189,19 @@ span#address {
   font-family: "Varela Round", sans-serif;
   text-transform: capitalize;
   padding: 2vh 2vh;
+  outline:none;
 }
 .compiler button {
   float: right;
   padding: 1vh 3vh;
   margin: 1vh;
-  /* border: solid 1px white; */
-  border-radius: 7px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 20px;
+  font-size: 2vh;
   color: white;
+}
+.compiler button:hover{
+  border: 3px solid white;
 }
 #run {
   background-color: rgb(130, 41, 9);
@@ -210,13 +216,13 @@ span#address {
   float: right;
   border: groove 4px rgb(173, 81, 45);
   padding: 3vh 4vw;
-  align-items: center;
+  text-align: center;
 }
 #archHeadline {
   font-weight: bold;
   color: rgb(94, 9, 9);
-  font-size: 3vw;
-  margin: 0 32%;
+  font-size: 2vw;
+  text-align: center;
 }
 .archHead {
   font-weight: bold;
@@ -229,14 +235,14 @@ span#address {
   border-radius: 7px;
   background-color: rgb(246, 201, 134);
   padding-left: 4vw;
-  height: 10vh;
+  height: 12vh;
 }
 .counters span {
   margin-right: 1vw;
 }
 .register-pairs {
   position: relative;
-  border: solid 0.4vh black;
+  border: 2px solid black;
   border-radius: 1vh;
   background-color: rgb(246, 201, 134);
   margin: 2vh 10%;
@@ -252,7 +258,7 @@ span#address {
   background-color: rgb(246, 201, 134);
   padding-left: 0.2vh;
   margin: 0.8vh;
-  height: 10vh;
+  height: 15vh;
 }
 .flags .rpcontent div {
   margin-left: 1vw;
@@ -310,7 +316,7 @@ span#address {
   .architecture {
     float: none;
     width: 100%;
-    font-size: 3vh;
+    font-size: 4vh;
   }
   .container {
     float: none;
@@ -320,6 +326,7 @@ span#address {
   span#addHead,
   span#address {
     font-size: 3vh;
+    text-align: center;
   }
   .mainDiv {
     top: 100%;
@@ -327,46 +334,14 @@ span#address {
   }
   .register-pairs {
     width: 50vw;
-    margin: 3vh 25vw;
+    margin-left:20vw;
   }
   .flags {
     display: flex;
     flex-direction: column;
-    /* align-content: column; */
     height: 20vh;
-    width: 30vw;
-    margin: 0 35vw;
-  }
-}
-@media screen and (max-width: 700px) {
-  .architecture {
-    float: none;
-    width: 100%;
-    font-size: 3vh;
-  }
-  .container {
-    float: none;
-    width: 100%;
-  }
-  #archHeadline,
-  span#addHead,
-  span#address {
-    font-size: 3vh;
-  }
-  .mainDiv {
-    top: 100%;
-    height: 200vh;
-  }
-  .register-pairs {
-    width: 50vw;
-    margin: 3vh 25vw;
-  }
-  .flags div {
-    display: flex;
-    flex-direction: column;
-    /* align-content: column; */
-    height: 20vh;
-    width: 30vw;
-    margin: 0 35vw;
+    padding:2px;
+    width: 40vw;
+    margin-left:25vw;
   }
 }
