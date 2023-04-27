@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap" rel="stylesheet">
 
-    <title>8085 Simulator</title>
+    <title>Document</title>
 </head>
 <body>
     <header class="header">
@@ -36,16 +36,15 @@
             <div class="compiler">
                 <button id="run">Run</button>
                 <button id="debug">Debug</button>
+                <a href="./architectue.html" style="float:right"><button id="archi" class="temp">Architecture</button></a>
             </div>
         </div>
-
         <div class="architecture">
-            <div class="box">
+             <div class="box">
                 <span id="archHeadline">Architecture</span>
             </div>
-            <div class="counters">
-                <div class="rpcontent">
-
+            <div class="counters ">
+                <div class="count rpcontent">  
                     <span class="archHead">PC:</span>
                     <span id="pc">0000</span>
                     <span class="archHead">SP:</span>
@@ -54,8 +53,8 @@
                     <span id="accum">00</span>
                 </div>
             </div>
-            <div class="register-pairs">
-                <div class="rpcontent">
+            <div class="register-pairs ">
+                <div class="rp rpcontent ">
 
                     <div class="pairs">
                         <span class="archHead" >B :</span>
@@ -78,7 +77,7 @@
                 </div>
             </div>
             <div class="flags">
-                <div class="rpcontent">
+                <div class="fg rpcontent">
                     <div>
                         <span class="archHead">S :</span>
                         <span id="S">0</span>
@@ -97,10 +96,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="architect">
-           <button></button>
         </div>
     </div>
 </body>
